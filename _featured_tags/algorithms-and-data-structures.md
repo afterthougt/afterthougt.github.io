@@ -7,6 +7,6 @@ category: cs
 sidebar: true
 order: 1
 description: >
-  &nbsp; [프로그래머스](https://programmers.co.kr)<br>
-  &nbsp; [LeetCode](https://leetcode.com/)
+  &nbsp; [프로그래머스](https://programmers.co.kr){:target="_blank"}<br>
+  &nbsp; [LeetCode](https://leetcode.com/){:target="_blank"}
 ---
