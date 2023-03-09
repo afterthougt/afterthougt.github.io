@@ -6,9 +6,9 @@ tags: pl
 
 ---
 
-# 주피터<sub>Jupyter</sub>
+# 주피터
 - [IPython](https://ipython.org) 커널 기반 대화형 파이썬 셸<sub>interactive Python shell</sub>
-- _Ju_lia + _Pyt_hon + _R_
+- *Ju*lia + *Pyt*hon + *R*
 ## 단축키<sub>shortcuts</sub>
   - 툴팁 표시: Shift + Tab
   - 들여쓰기: Ctrl + \] 또는 Ctrl + \[
@@ -22,7 +22,7 @@ tags: pl
   - 마크다운 변환: M, M
   - 코드로 변환: Y, Y
 
-# 코랩<sub>Colab</sub>
+# 코랩
 - 구글 개발
 - 클라우드 기반의 주피터 노트북<sub>Jupyter notebook</sub>
 - 구글 드라이브 + GCP + 주피터
