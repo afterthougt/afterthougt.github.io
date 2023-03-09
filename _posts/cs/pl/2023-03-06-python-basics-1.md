@@ -7,7 +7,7 @@ tags: pl
 ---
 
 # 파이썬 소개
-- 1991년 네덜란드 출신 소프트웨어 엔지니어인 귀도 반 로섬(Guido van Rossum, 1956 ~ )이 발표
+1991년 네덜란드 출신 소프트웨어 엔지니어인 귀도 반 로섬(Guido van Rossum, 1956 ~ )이 발표
 
 ## 특징
   - 무료 & 오픈소스
@@ -26,6 +26,6 @@ tags: pl
   - 프론트엔드(front-end; FE) 및 백엔드(back-end; BE) 개발 가능
   - 동적 메모리 할당
 
-# 참고
+## 참고
 - [귀도 반 로섬 - 위키백과, 우리 모두의 백과사전](https://ko.wikipedia.org/wiki/%EA%B7%80%EB%8F%84_%EB%B0%98_%EB%A1%9C%EC%84%AC){: target="_blank"}
 - [Python Features - GeeksforGeeks](https://www.geeksforgeeks.org/python-features/){: target="_blank"}

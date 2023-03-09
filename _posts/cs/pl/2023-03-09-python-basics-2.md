@@ -13,5 +13,5 @@ tags: pl
   - 구문 그룹화는 괄호가 아닌 들여쓰기에 의해 통제
   - 변수나 인자 선언 불필요
 
-# 참고
+## 참고
 - [Python Tutorial - Whetting Your Appetite](https://docs.python.org/3/tutorial/appetite.html)
