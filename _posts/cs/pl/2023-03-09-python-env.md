@@ -10,6 +10,7 @@ tags: pl
 ## 주피터(Jupyter)
 - [IPython](https://ipython.org) 커널 기반 대화형 파이썬 셸<sub>interactive Python shell</sub>
 - *Ju*lia + *Pyt*hon + *R*
+
 ### 단축키<sub>shortcuts</sub>
   - 툴팁 표시: Shift + Tab
   - 들여쓰기: Ctrl + \] 또는 Ctrl + \[
@@ -33,7 +34,7 @@ tags: pl
 
 ## 주피터 & 코랩 단축키 비교
 |작동|코랩|주피터|
-|-------------------|-------------|--|
+|---|---|---|
 |키보드 단축키 보이기 |Ctrl/cmd M H|H|
 |위 셀 수정          |Ctrl/cmd M A|A|
 |아래 셀 수정        |Ctrl/cmd M B|B|
