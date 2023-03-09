@@ -14,4 +14,4 @@ tags: pl
   - 변수나 인자 선언 불필요
 
 ## 참고
-- [Python Tutorial - Whetting Your Appetite](https://docs.python.org/3/tutorial/appetite.html)
+- [Python Tutorial - Whetting Your Appetite](https://docs.python.org/3/tutorial/appetite.html){: target="_blank"}

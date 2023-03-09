@@ -8,7 +8,7 @@ tags: pl
 
 # 파이썬 코드 편집 도구 - Jupyter, Colab
 ## 주피터(Jupyter)
-- [IPython](https://ipython.org) 커널 기반 대화형 파이썬 셸<sub>interactive Python shell</sub>
+- [IPython](https://ipython.org){: target="_blank"} 커널 기반 대화형 파이썬 셸<sub>interactive Python shell</sub>
 - *Ju*lia + *Pyt*hon + *R*
 
 ### 단축키<sub>shortcuts</sub>
@@ -33,7 +33,8 @@ tags: pl
 - VS code 등과 연결하여 사용 가능
 
 ## 주피터 & 코랩 단축키 비교
-| 작동 | 코랩 | 주피터 |
+
+| 작동 | 코랩 단축키 | 주피터 단축키 |
 | --- | --- | --- |
 | 키보드 단축키 보이기 | Ctrl/cmd M H | H |
 | 위 셀 수정          | Ctrl/cmd M A | A |
@@ -45,5 +46,5 @@ tags: pl
 | 커서 기준 셀 나누기   | Ctrl/cmd M - | Ctrl Shift - |
 
 ## 참고
-- [\[Jupyter 주피터\] 주요 단축키 모음](https://planharry.tistory.com/22)
-- [\[파이썬\] 구글 코랩(Colab) 단축키 모음](https://surfonmedia.tistory.com/1)
+- [\[Jupyter 주피터\] 주요 단축키 모음](https://planharry.tistory.com/22){: target="_blank"}
+- [\[파이썬\] 구글 코랩(Colab) 단축키 모음](https://surfonmedia.tistory.com/1){: target="_blank"}
