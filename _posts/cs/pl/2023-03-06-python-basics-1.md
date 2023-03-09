@@ -2,7 +2,7 @@
 layout: post
 title: 파이썬 소개
 category: cs
-slug: pl
+tags: pl
 
 ---
 

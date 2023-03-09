@@ -2,7 +2,7 @@
 layout: post
 title: 파이썬 코드 편집 도구 - Jupyter, Colab
 category: cs
-slug: pl
+tags: pl
 
 ---
 

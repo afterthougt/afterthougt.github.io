@@ -2,7 +2,7 @@
 layout: post
 title: 파이썬 사용의 이유
 category: cs
-slug: pl
+tags: pl
 
 ---
 
