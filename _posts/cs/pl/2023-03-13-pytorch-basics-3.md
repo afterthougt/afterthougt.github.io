@@ -14,6 +14,6 @@ tags: pl
 - DL 코드도 하나의 프로그램 <br> .. 개발 용이성 확보 & 유지보수 향상 필요
 
 ### 파이토치 프로젝트 템플릿
-- 링크: https://github.com/victoresque/pytorch-template
+- 링크: [pytorch-template](https://github.com/victoresque/pytorch-template){: target="_blank"}
 - parse_config.py의 \_\_getitem\_\_ 메서드는 인덱스를 넣어주면 해당 인덱스의 값을 반환하게 하는 기능
 - Data-centric AI 시대에는 terminal에서 코드를 실행해야 하는 경우가 많다?
