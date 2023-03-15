@@ -7,6 +7,7 @@ tags: ads
 ---
 
 # [프로그래머스] 체육복 (파이썬; Python)
+## 문제 설명
 [링크](https://school.programmers.co.kr/learn/courses/30/lessons/42862){:target="_blank"}
 
 - 잃어버린 아이템(체육복)을 기준으로 `for-loop` 체크를 한다.
