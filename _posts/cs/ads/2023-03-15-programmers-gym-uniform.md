@@ -40,7 +40,7 @@ def solution(n, lost, reserve):
 ```
 
 ## 다른 풀이
-[참고](https://rain-bow.tistory.com/30){:target="_blank}
+[참고](https://rain-bow.tistory.com/30){:target="_blank"}
 
 - 여분의 아이템을 기준으로 `for-loop` 탐색을 진행하는 방법
 
