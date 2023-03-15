@@ -1,8 +1,9 @@
 ---
 layout: post
-title: [프로그래머스] 체육복 (파이썬; Python)
+title: \[프로그래머스\] 체육복 (파이썬; Python)
 category: cs
 tags: ads
+
 ---
 
 # [프로그래머스] 체육복 (파이썬; Python)
