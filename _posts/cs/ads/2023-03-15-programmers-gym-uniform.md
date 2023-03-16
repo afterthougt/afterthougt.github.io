@@ -36,7 +36,8 @@ def solution(n, lost, reserve):
             net_reserve.remove(lost_item - 1)
         elif lost_item + 1 in net_reserve:
             net_reserve.remove(lost_item + 1)
-    answer = n - len(net_lost)
+        else:
+            answer -= 1
     return answer
 ```
 
