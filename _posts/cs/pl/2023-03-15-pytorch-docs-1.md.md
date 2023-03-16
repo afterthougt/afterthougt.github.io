@@ -6,7 +6,6 @@ tags: pl
 
 # 파이토치(PyTorch) 문서 읽어보기
 - Q. PyTorch storage object?
-- Q. torch.chunk로 데이터셋 구성해볼 수 있으려나?
 - Q. torch.range(0, n) 함수는 deprecated 된다는데, 어쩌다가 n을 포함하게 되었을지?
 - torch.arange(a, b)는 range(a, b)와 같은 범위를 가리켜서 다행
 - torch.swapdims 어렵
@@ -24,3 +23,24 @@ torch.backends.cudnn.deterministic = True  # type: ignore
 torch.backends.cudnn.benchmark = True  # type: ignore
 
 ---
+
+# PyTorch 문서 훑어보기
+## torch.chunk
+### 용례
+`torch.chunk(*input*, *chunks*, *dim=0*)` $$\rightarrow$$ List of Tensors <br>
+### 코드
+```python
+>>> torch.arange(5).chunk(3)
+(tensor([0, 1]),
+ tensor([2, 3]),
+ tensor([4])
+)
+>>> torch.arange(13).chunk(6)
+(tensor([0, 1, 2]),
+ tensor([3, 4, 5]),
+ tensor([6, 7, 8]),
+ tensor([ 9, 10, 11]),
+ tensor([12]))
+```
+- 아래 코드의 경우, 6개의 chunk로 나눌 수 없어서 그보다 적은 수의 chunk로 나눈 예시.
+- Q. torch.chunk를 데이터셋 구성 시 사용하게 될지에 대한 의문?
