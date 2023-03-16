@@ -22,11 +22,11 @@ tags: ads
 def solution(number, k):
     """
     Args:
-        number
-        k
+        number: 주어진 수, 2 이상 100만 이하
+        k: 주어진 수
         
     Return:
-        answer: 
+        answer: number에서 k개의 수를 제거했을 때 얻을 수 있는 가장 큰 숫자
     """
 
     stack = []
