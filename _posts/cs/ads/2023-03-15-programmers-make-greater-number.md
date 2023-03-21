@@ -1,12 +1,12 @@
 ---
 layout: post
-title: \[프로그래머스\] 큰 수 만들기 (파이썬; Python)
+title: \[프로그래머스\] 큰 수 만들기 (풀이 언어: Python/파이썬)
 category: cs
 tags: ads
 
 ---
 
-# [프로그래머스/Programmers] 큰 수 만들기 (풀이 언어: 파이썬; Python)
+# [프로그래머스/Programmers] 큰 수 만들기 (풀이 언어: Python/파이썬)
 ## 문제 설명
 [링크](https://school.programmers.co.kr/learn/courses/30/lessons/42883){:target="_blank"}
 
