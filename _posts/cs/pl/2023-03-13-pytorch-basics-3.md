@@ -6,7 +6,7 @@ tags: pl
 
 ---
 
-#[PyTorch] PyTorch 기초 3
+# [PyTorch] PyTorch 기초 3
 
 ## 파이토치 프로젝트 템플릿의 필요성?
 - 개발 초기 단계에서는 대화식 개발 과정이 유리 <br> $$\rightarrow$$ 학습 과정과 디버깅 등 지속적인 확인
