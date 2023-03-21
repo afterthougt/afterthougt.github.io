@@ -6,7 +6,7 @@ tags: pl
 
 ---
 
-# 파이토치(PyTorch) 활용
+# [PyTorch] PyTorch 활용
 
 ## 멀티 GPU
 ### 모델 병렬화(Model parallel)
@@ -46,4 +46,4 @@ tags: pl
 - 하이퍼파라미터 서치<sub>Hyperparameter search</sub>를 위한 다양한 모듈 제공
 
 ## 참고
-- 부스트코스 PyTorch 강의
+- [부스트코스 - PyTorch 강의](https://www.boostcourse.org/ai213){:target="_blank"}

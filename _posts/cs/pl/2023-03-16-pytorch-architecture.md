@@ -6,7 +6,7 @@ tags: pl
 
 ---
 
-# 파이토치(PyTorch) 구조 학습
+# [PyTorch] PyTorch 구조 학습
 
 ## 학습 결과를 공유하려면?
 ### model.save()
@@ -36,4 +36,4 @@ tags: pl
 - 프로젝트 단위로 코드나 실험을 공유할 때 편한 장점
 
 ## 참고
-- 부스트코스 PyTorch 강의
+- [부스트코스 - PyTorch 강의](https://www.boostcourse.org/ai213){:target="_blank"}

@@ -6,7 +6,7 @@ tags: pl
 
 ---
 
-# 파이썬 코드 편집 도구 - Jupyter, Colab
+# [Python/파이썬] 파이썬 코드 편집 환경
 ## 주피터(Jupyter)
 - [IPython](https://ipython.org){: target="_blank"} 커널 기반 대화형 파이썬 셸<sub>interactive Python shell</sub>
 - *Ju*lia + *Pyt*hon + *R*
@@ -46,5 +46,6 @@ tags: pl
 | 커서 기준 셀 나누기   | Ctrl/cmd M - | Ctrl Shift - |
 
 ## 참고
+- [부스트코스 - AI 기초 강의](https://www.boostcourse.org/ai100){:target="_blank"}
 - [\[Jupyter 주피터\] 주요 단축키 모음](https://planharry.tistory.com/22){: target="_blank"}
 - [\[파이썬\] 구글 코랩(Colab) 단축키 모음](https://surfonmedia.tistory.com/1){: target="_blank"}
