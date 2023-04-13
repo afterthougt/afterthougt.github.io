@@ -303,5 +303,5 @@ $$
 - 모델 아키텍처 내의 순차성을 더 덜어내는 것 또한 미래 과제.
 
 ## 참고
-- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
-- [Sequence Models of DLS course by Andrew Ng](https://www.coursera.org/learn/nlp-sequence-models)
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762){:target="_blank"}
+- [Sequence Models of DLS course by Andrew Ng](https://www.coursera.org/learn/nlp-sequence-models){:target="_blank"}
