@@ -74,4 +74,4 @@ STS (Semantic Textual Similarity) 태스크를 수행해보면서 머신 러닝 
         - 두 가지 데이터셋 성능에 영향을 주므로 orthogonalization 정도가 떨어진다고 표현.
 
 ## 참고
-- [Structuring Machine Learning Projects](https://www.coursera.org/learn/machine-learning-projects/home/week/1)
+- [Structuring Machine Learning Projects](https://www.coursera.org/learn/machine-learning-projects/home/week/1){:target="_blank"}
