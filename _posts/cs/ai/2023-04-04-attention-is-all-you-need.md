@@ -55,7 +55,7 @@ tags: ai
 
 ### 어텐션(Attention)
 
-#### 스케일드 닷-프로덕트 어텐션(Scaled Dot-Product Attention; Self-Attention)
+#### 스케일드 닷-프로덕트 어텐션(Scaled Dot-Product Attention, Self-Attention)
 
 $$
 \text{Attention}(Q,K,V)=\text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V

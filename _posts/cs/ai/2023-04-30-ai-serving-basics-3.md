@@ -27,7 +27,7 @@ tags: ai
 
 ### PyTorch 등을 사용하여 개발한 파이썬 코드 실행을 위한 도커 이미지 생성 예제
 
-1. 02-docker 폴더 생성(mkdir; make directory) 및 폴더 이동(cd; change directory)
+1. 02-docker 폴더 생성(mkdir, make directory) 및 폴더 이동(cd, change directory)
     
     ```bash
     mkdir 02-docker

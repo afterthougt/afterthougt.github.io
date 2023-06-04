@@ -20,7 +20,7 @@ STS (Semantic Textual Similarity) 태스크를 수행해보면서 머신 러닝 
     - 데이터 더 모으기
     - 다양한 데이터 모으기: 다양한 포즈의 고양이 사진, 고양이가 아닌(negative) 사진 등
     - 학습 시간 늘리기
-    - 경사하강법(GD; gradient descent) 알고리즘 대신 Adam 사용하기
+    - 경사하강법(GD, gradient descent) 알고리즘 대신 Adam 사용하기
     - 더 큰 규모의 아키텍처 시도하기
     - 더 작은 규모의 아키텍처 시도하기
     - 드롭아웃(Dropout) 적용하기

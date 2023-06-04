@@ -36,14 +36,14 @@ tags: pl
 
 ### 하이퍼파라미터 튜닝
 - 모델 스스로 학습하지 않는 값은 사람이 지정
-- 하이퍼파라미터에 의해 값이 크게 좌우될 때도 있음
-- 마지막 0.01을 쥐어짤 때 도전해 볼만함
+- 하이퍼파라미터에 의해 값이 크게 좌우될 때도 있음.
+- 마지막 0.01을 쥐어짤 때 도전해 볼 만함.
 
 ### Ray
 - 멀티노드 멀티 프로세싱<sub>Multi-node multi processing</sub> 지원 모듈
 - 머신 러닝/딥 러닝 병렬 처리를 위해 개발된 모듈
 - 기본적으로 현재 분산병렬 머신 러닝/딥 러닝 모듈의 표준
-- 하이퍼파라미터 서치<sub>Hyperparameter search</sub>를 위한 다양한 모듈 제공
+- 하이퍼파라미터 서치<sub>Hyperparameter search</sub>를 위한 다양한 모듈 제공.
 
 ## 참고
 - [부스트코스 - PyTorch 강의](https://www.boostcourse.org/ai213){:target="_blank"}
