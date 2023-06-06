@@ -59,17 +59,30 @@ tags: ads
 - BFS를 사용하여 경계를 따라 길을 찾는다.
 - 이때, 경계선을 따라가는 조건을 구현하는 것이 다소 까다로울 수 있는데, 정사각형 4개로 이루어진 큰 정사각형 격자 중심에 현재 위치가 있다고 가정하자. 이 위치를 기준으로 상하좌우의 진행방향으로 양 옆에 놓인 두 칸의 각 정사각형의 지형이 비어있는지 아니면 덮여있는지를 살핀다. 만약 모두 덮여있거나 비어있다면 해당 방향으로 갈 수 없으며(진행할 수 없으며), 그렇지 않은 경우, 즉 한 칸의 정사각형은 비어있고 다른 한 칸은 덮여있는 경우에는 해당 방향으로 갈 수 있다는 데 착안한다.
 - 따라서 두 정사각형이 board에서 모두 False 혹은 모두 True라면 갈 수 없고 둘의 구성이 False, True로 달라야 하므로 XOR gate 로직을 사용하여 알고리즘을 구성한다: 아래에서 `(board[rect1_x][rect1_y] ^ board[rect2_x][rect2_y])` 조건 부분.
+- (2023. 06. 06. 수정 사항) Rust 스타일의 엄격한 타입 체크를 도입해보려고 기존 Python 코드를 수정해보았다. Rust는 강력한 타입 시스템을 가진 언어인데, 해당 언어의 장점을 취하면 코드의 안정성과 가독성을 향상시킬 수 있다고 한다. 이러한 원칙을 Python 코드에 적용하기 위해 데이터 클래스를 도입하여 좌표를 표현하였는데, 장점은 다음과 같은 것들이 있다고 한다.
+  - 코드의 의도 명확화: 함수의 인자와 반환값에 대한 정보를 더욱 명확하게 제공
+  - 코드의 유지 보수를 용이화
+  - 잠재적인 오류 사전 방지
 
 ## 코드
 
 ```python
 from collections import deque
-from itertools import chain
+from dataclasses import dataclass
 from typing import List, Tuple
 
 
-def solution(rectangle: list, characterX: int, characterY: int,
-             itemX: int, itemY: int) -> int:
+@dataclass
+class Point:
+    x: int
+    y: int
+
+
+def solution(rectangle: List[int],
+             characterX: int,
+             characterY: int,
+             itemX: int,
+             itemY: int) -> int:
     """지형의 경계를 따라 최단거리로 현재 위치에서 아이템 위치까지 이동하기.
 
     Args:
@@ -82,34 +95,37 @@ def solution(rectangle: list, characterX: int, characterY: int,
     Returns:
         캐릭터가 아이템을 줍기 위해 이동해야 하는 가장 짧은 거리.
     """
-    x_max, y_max = get_max_x_and_max_y(rectangle)
-    board = [[False for _ in range(x_max)] for _ in range(y_max)]
-    fill_regions(board, rectangle)
-    shortest = bfs(board, x_max, y_max, characterX, characterY, itemX, itemY)
+    rectangle_points = [(Point(rect[0], rect[1]), Point(rect[2], rect[3])) for rect in rectangle]
+    character = Point(characterX, characterY)
+    item = Point(itemX, itemY)
+
+    max_point = get_max_point(rectangle_points)
+    board = [[False for _ in range(max_point.x)] for _ in range(max_point.y)]
+    fill_walls(board, rectangle_points)
+    shortest = bfs(board, max_point, character, item)
     return shortest
 
 
-def get_max_x_and_max_y(rectangle: List[int]) -> Tuple[int, int]:
+def get_max_point(rectangle: List[Tuple[Point, Point]]) -> Point:
     """지형을 완전히 덮는 가장 작은 직사각형의 우측상단 꼭짓점 좌표 구하기."""
-    chained_rectangle = list(chain.from_iterable(rectangle))
-    x_max = max(chained_rectangle[1::2])
-    y_max = max(chained_rectangle[::2])
-    return x_max + 50, y_max + 50
+    max_x = max(rect[1].x for rect in rectangle)
+    max_y = max(rect[1].y for rect in rectangle)
+    return Point(max_x + 50, max_y + 50)
 
 
-def fill_regions(board: List[bool], rectangle: List[int]):
+def fill_walls(board: List[List[bool]],
+               rectangle: List[Tuple[Point, Point]]) -> None:
     """지형으로 덮인 곳 True로 채우기."""
     for rect in rectangle:
-        # lb: left_bottom, rt: right_top
-        lb_x, lb_y, rt_x, rt_y = rect
-        for i in range(lb_x, rt_x):
-            for j in range(lb_y, rt_y):
+        for i in range(rect[0].x, rect[1].x):
+            for j in range(rect[0].y, rect[1].y):
                 board[i][j] = True
-    return
 
 
-def bfs(board: List[int], x_max: int, y_max: int,
-        characterX: int, characterY: int, itemX: int, itemY: int):
+def bfs(board: List[List[bool]],
+        max_point: Point,
+        character: Point,
+        item: Point) -> int:
     dx_zip = (0, 0, -1, 1)
     dy_zip = (1, -1, 0, 0)
     along_edge = (
@@ -118,13 +134,13 @@ def bfs(board: List[int], x_max: int, y_max: int,
         ((-1, 0), (-1, -1)),  # 좌
         ((0, 0), (0, -1)),  # 우
     )
-    visited = [[False for _ in range(x_max)] for _ in range(y_max)]
-    visited[characterX][characterY] = True
-    q = deque([(characterX, characterY, 0)])
+    visited = [[False for _ in range(max_point.x)] for _ in range(max_point.y)]
+    visited[character.x][character.y] = True
+    q = deque([(character.x, character.y, 0)])
     while q:
         x, y, dist = q.popleft()
 
-        if x == itemX and y == itemY:
+        if x == item.x and y == item.y:
             return dist
 
         for dx, dy, dw in zip(dx_zip, dy_zip, along_edge):
@@ -135,15 +151,14 @@ def bfs(board: List[int], x_max: int, y_max: int,
             rect1_x, rect1_y = x + dx1, y + dy1
             rect2_x, rect2_y = x + dx2, y + dy2
             conditions = (
-                -1 < nx and nx < x_max\
-                and -1 < ny and ny < y_max\
-                and not visited[nx][ny]\
-                and (board[rect1_x][rect1_y]\
-                     ^ board[rect2_x][rect2_y])
+                -1 < nx < max_point.x
+                and -1 < ny < max_point.y
+                and not visited[nx][ny]
+                and (board[rect1_x][rect1_y]
+                    ^ board[rect2_x][rect2_y])
             )
             if conditions:
                 visited[nx][ny] = True
                 q.append((nx, ny, dist + 1))
     return dist
-
 ```
