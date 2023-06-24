@@ -5,7 +5,7 @@ title: Programming Languages
 slug: pl
 category: cs
 sidebar: true
-order: 4
+order: 3
 description: >
   &nbsp; 파이썬<sub>Python</sub><br>
   &nbsp; 자바<sub>Java</sub><br>
